@@ -1,0 +1,390 @@
+{
+  "branch_id": 3,
+  "customers": [
+    {
+      "customer_id": 31,
+      "branch_id": 3,
+      "name": "Ms. Angelina Daniel",
+      "nik": "509615d6-86a5-40",
+      "address": "320 Ondricka Ways",
+      "phone_number": "432.607.0451",
+      "registration_date": "2024-04-20"
+    },
+    {
+      "customer_id": 32,
+      "branch_id": 3,
+      "name": "Virginia Pollich",
+      "nik": "f451ffe3-a262-47",
+      "address": "188 Kelli Brooks",
+      "phone_number": "1-792-391-0654",
+      "registration_date": "2025-02-08"
+    },
+    {
+      "customer_id": 33,
+      "branch_id": 3,
+      "name": "Ms. Grant Heidenreich",
+      "nik": "3cbb7b74-1ae8-4d",
+      "address": "4435 Mark Ferry",
+      "phone_number": "(999) 463-4753 x63369",
+      "registration_date": "2024-07-29"
+    },
+    {
+      "customer_id": 34,
+      "branch_id": 3,
+      "name": "Vivian Pagac",
+      "nik": "33a923aa-1111-4c",
+      "address": "1377 Lottie Burg",
+      "phone_number": "1-200-346-2074 x2511",
+      "registration_date": "2024-05-20"
+    },
+    {
+      "customer_id": 35,
+      "branch_id": 3,
+      "name": "Neal Morar",
+      "nik": "817c97bd-c5f8-49",
+      "address": "03128 Corkery Track",
+      "phone_number": "570-637-5950 x2616",
+      "registration_date": "2025-03-19"
+    },
+    {
+      "customer_id": 36,
+      "branch_id": 3,
+      "name": "Miss Gary Abbott",
+      "nik": "b7614205-eea5-4d",
+      "address": "60650 Harmon Squares",
+      "phone_number": "(635) 312-8028",
+      "registration_date": "2024-02-02"
+    },
+    {
+      "customer_id": 37,
+      "branch_id": 3,
+      "name": "Lynne Stamm",
+      "nik": "1b3765d7-fbda-40",
+      "address": "690 Euna Ranch",
+      "phone_number": "(570) 980-8788",
+      "registration_date": "2023-12-05"
+    },
+    {
+      "customer_id": 38,
+      "branch_id": 3,
+      "name": "Chester Carroll",
+      "nik": "53c959c5-6b8a-46",
+      "address": "6818 Schmidt Point",
+      "phone_number": "(753) 741-8287 x219",
+      "registration_date": "2024-09-01"
+    },
+    {
+      "customer_id": 39,
+      "branch_id": 3,
+      "name": "Earnest Cormier Sr.",
+      "nik": "1c40bbe0-a71f-45",
+      "address": "0946 Izabella Row",
+      "phone_number": "740.342.2955",
+      "registration_date": "2023-11-07"
+    },
+    {
+      "customer_id": 40,
+      "branch_id": 3,
+      "name": "Wesley Murazik",
+      "nik": "dba7881c-f132-42",
+      "address": "60285 Ledner Rest",
+      "phone_number": "(526) 812-2816 x4837",
+      "registration_date": "2023-06-01"
+    }
+  ],
+  "loans": [
+    {
+      "loan_id": 31,
+      "customer_id": 31,
+      "branch_id": 3,
+      "amount_plafond": "18099642",
+      "interest_rate": 5.14,
+      "loan_date": "2024-07-01",
+      "term_months": 8,
+      "status": "defaulted"
+    },
+    {
+      "loan_id": 32,
+      "customer_id": 32,
+      "branch_id": 3,
+      "amount_plafond": "15713187",
+      "interest_rate": 11.75,
+      "loan_date": "2024-06-09",
+      "term_months": 18,
+      "status": "active"
+    },
+    {
+      "loan_id": 33,
+      "customer_id": 33,
+      "branch_id": 3,
+      "amount_plafond": "41186960",
+      "interest_rate": 8.39,
+      "loan_date": "2025-02-17",
+      "term_months": 21,
+      "status": "defaulted"
+    },
+    {
+      "loan_id": 34,
+      "customer_id": 34,
+      "branch_id": 3,
+      "amount_plafond": "48767002",
+      "interest_rate": 8.51,
+      "loan_date": "2024-09-16",
+      "term_months": 19,
+      "status": "active"
+    },
+    {
+      "loan_id": 35,
+      "customer_id": 35,
+      "branch_id": 3,
+      "amount_plafond": "31734012",
+      "interest_rate": 10.5,
+      "loan_date": "2025-03-19",
+      "term_months": 9,
+      "status": "defaulted"
+    },
+    {
+      "loan_id": 36,
+      "customer_id": 36,
+      "branch_id": 3,
+      "amount_plafond": "42431896",
+      "interest_rate": 9.96,
+      "loan_date": "2025-01-21",
+      "term_months": 24,
+      "status": "defaulted"
+    },
+    {
+      "loan_id": 37,
+      "customer_id": 37,
+      "branch_id": 3,
+      "amount_plafond": "34394720",
+      "interest_rate": 11.26,
+      "loan_date": "2024-08-04",
+      "term_months": 10,
+      "status": "completed"
+    },
+    {
+      "loan_id": 38,
+      "customer_id": 38,
+      "branch_id": 3,
+      "amount_plafond": "39760958",
+      "interest_rate": 5.45,
+      "loan_date": "2025-03-18",
+      "term_months": 6,
+      "status": "active"
+    },
+    {
+      "loan_id": 39,
+      "customer_id": 39,
+      "branch_id": 3,
+      "amount_plafond": "12032155",
+      "interest_rate": 5.45,
+      "loan_date": "2024-11-20",
+      "term_months": 7,
+      "status": "active"
+    },
+    {
+      "loan_id": 40,
+      "customer_id": 40,
+      "branch_id": 3,
+      "amount_plafond": "22640893",
+      "interest_rate": 11.92,
+      "loan_date": "2024-06-25",
+      "term_months": 17,
+      "status": "active"
+    },
+    {
+      "loan_id": 41,
+      "customer_id": 31,
+      "branch_id": 3,
+      "amount_plafond": "26874430",
+      "interest_rate": 10.31,
+      "loan_date": "2024-12-29",
+      "term_months": 12,
+      "status": "defaulted"
+    },
+    {
+      "loan_id": 42,
+      "customer_id": 32,
+      "branch_id": 3,
+      "amount_plafond": "37225933",
+      "interest_rate": 11.21,
+      "loan_date": "2024-08-26",
+      "term_months": 18,
+      "status": "completed"
+    }
+  ],
+  "payments": [
+    {
+      "payment_id": 31,
+      "loan_id": 31,
+      "branch_id": 3,
+      "payment_date": "2025-03-22",
+      "amount_paid": "3724263",
+      "due_date": "2025-03-10",
+      "is_on_time": true
+    },
+    {
+      "payment_id": 32,
+      "loan_id": 32,
+      "branch_id": 3,
+      "payment_date": "2025-04-19",
+      "amount_paid": "2202034",
+      "due_date": "2025-02-26",
+      "is_on_time": false
+    },
+    {
+      "payment_id": 33,
+      "loan_id": 33,
+      "branch_id": 3,
+      "payment_date": "2025-05-11",
+      "amount_paid": "1868698",
+      "due_date": "2025-02-23",
+      "is_on_time": false
+    },
+    {
+      "payment_id": 34,
+      "loan_id": 34,
+      "branch_id": 3,
+      "payment_date": "2025-04-13",
+      "amount_paid": "2015703",
+      "due_date": "2025-05-13",
+      "is_on_time": true
+    },
+    {
+      "payment_id": 35,
+      "loan_id": 35,
+      "branch_id": 3,
+      "payment_date": "2025-04-23",
+      "amount_paid": "3950682",
+      "due_date": "2025-05-08",
+      "is_on_time": true
+    },
+    {
+      "payment_id": 36,
+      "loan_id": 36,
+      "branch_id": 3,
+      "payment_date": "2025-03-25",
+      "amount_paid": "1318386",
+      "due_date": "2025-04-16",
+      "is_on_time": false
+    },
+    {
+      "payment_id": 37,
+      "loan_id": 37,
+      "branch_id": 3,
+      "payment_date": "2025-03-17",
+      "amount_paid": "2896974",
+      "due_date": "2025-03-25",
+      "is_on_time": true
+    },
+    {
+      "payment_id": 38,
+      "loan_id": 38,
+      "branch_id": 3,
+      "payment_date": "2025-03-30",
+      "amount_paid": "4649539",
+      "due_date": "2025-04-04",
+      "is_on_time": false
+    },
+    {
+      "payment_id": 39,
+      "loan_id": 39,
+      "branch_id": 3,
+      "payment_date": "2025-04-27",
+      "amount_paid": "4948290",
+      "due_date": "2025-04-28",
+      "is_on_time": true
+    }
+  ],
+  "employees": [
+    {
+      "employee_id": 31,
+      "name": "Danielle Bins",
+      "position": "Corporate Research Technician",
+      "assigned_customers": 1,
+      "hire_date": "2024-02-24",
+      "branch_id": 3
+    },
+    {
+      "employee_id": 32,
+      "name": "Deanna Hettinger",
+      "position": "Dynamic Tactics Designer",
+      "assigned_customers": 4,
+      "hire_date": "2024-07-12",
+      "branch_id": 3
+    },
+    {
+      "employee_id": 33,
+      "name": "Kristi Luettgen",
+      "position": "Legacy Creative Developer",
+      "assigned_customers": 1,
+      "hire_date": "2022-06-01",
+      "branch_id": 3
+    },
+    {
+      "employee_id": 34,
+      "name": "Kyle Anderson",
+      "position": "Global Branding Architect",
+      "assigned_customers": 1,
+      "hire_date": "2023-09-25",
+      "branch_id": 3
+    }
+  ],
+  "income": [
+    {
+      "income_id": 31,
+      "loan_id": 31,
+      "income_amount": "1845517",
+      "recorded_date": "2025-04-17"
+    },
+    {
+      "income_id": 32,
+      "loan_id": 32,
+      "income_amount": "1842673",
+      "recorded_date": "2025-05-03"
+    },
+    {
+      "income_id": 33,
+      "loan_id": 33,
+      "income_amount": "1328423",
+      "recorded_date": "2025-04-21"
+    },
+    {
+      "income_id": 34,
+      "loan_id": 34,
+      "income_amount": "1004616",
+      "recorded_date": "2025-05-08"
+    },
+    {
+      "income_id": 35,
+      "loan_id": 35,
+      "income_amount": "1622367",
+      "recorded_date": "2025-04-18"
+    },
+    {
+      "income_id": 36,
+      "loan_id": 36,
+      "income_amount": "1094539",
+      "recorded_date": "2025-05-09"
+    },
+    {
+      "income_id": 37,
+      "loan_id": 37,
+      "income_amount": "604247",
+      "recorded_date": "2025-04-28"
+    },
+    {
+      "income_id": 38,
+      "loan_id": 38,
+      "income_amount": "747029",
+      "recorded_date": "2025-05-07"
+    },
+    {
+      "income_id": 39,
+      "loan_id": 39,
+      "income_amount": "1038095",
+      "recorded_date": "2025-05-01"
+    }
+  ]
+}

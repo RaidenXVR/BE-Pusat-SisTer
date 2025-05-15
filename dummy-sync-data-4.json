@@ -1,0 +1,390 @@
+{
+  "branch_id": 4,
+  "customers": [
+    {
+      "customer_id": 41,
+      "branch_id": 4,
+      "name": "Mrs. Earnest Heathcote",
+      "nik": "bc0813ee-7962-4e",
+      "address": "551 Christelle Plaza",
+      "phone_number": "807.959.1514 x65502",
+      "registration_date": "2023-12-20"
+    },
+    {
+      "customer_id": 42,
+      "branch_id": 4,
+      "name": "Theresa Jerde",
+      "nik": "e8f014ec-a2ec-4f",
+      "address": "05154 Easter Squares",
+      "phone_number": "725.852.0829",
+      "registration_date": "2023-10-14"
+    },
+    {
+      "customer_id": 43,
+      "branch_id": 4,
+      "name": "Eva Connelly",
+      "nik": "28181485-442f-42",
+      "address": "611 Bert Fall",
+      "phone_number": "1-800-735-3214 x88865",
+      "registration_date": "2023-10-02"
+    },
+    {
+      "customer_id": 44,
+      "branch_id": 4,
+      "name": "Molly Boyle",
+      "nik": "8ded2a61-8d0c-44",
+      "address": "001 Cormier Squares",
+      "phone_number": "1-863-550-5427",
+      "registration_date": "2024-10-13"
+    },
+    {
+      "customer_id": 45,
+      "branch_id": 4,
+      "name": "Alejandro Hand",
+      "nik": "6b274d2d-3f48-40",
+      "address": "33778 Ephraim Lane",
+      "phone_number": "1-866-457-5067",
+      "registration_date": "2025-05-07"
+    },
+    {
+      "customer_id": 46,
+      "branch_id": 4,
+      "name": "Andrea Monahan Jr.",
+      "nik": "3c74adc3-cf1e-47",
+      "address": "85747 Klocko Lane",
+      "phone_number": "(253) 325-5309 x94113",
+      "registration_date": "2025-04-06"
+    },
+    {
+      "customer_id": 47,
+      "branch_id": 4,
+      "name": "Andy Nicolas",
+      "nik": "713957e0-0fbd-44",
+      "address": "506 Weimann Via",
+      "phone_number": "(620) 677-3403 x322",
+      "registration_date": "2024-05-30"
+    },
+    {
+      "customer_id": 48,
+      "branch_id": 4,
+      "name": "Muriel Gulgowski",
+      "nik": "adf98b11-d604-41",
+      "address": "70224 Stoltenberg Avenue",
+      "phone_number": "1-924-894-5068",
+      "registration_date": "2023-11-06"
+    },
+    {
+      "customer_id": 49,
+      "branch_id": 4,
+      "name": "Danielle Price V",
+      "nik": "f8f664c0-2887-40",
+      "address": "76379 Brennan Fall",
+      "phone_number": "1-797-859-8496",
+      "registration_date": "2023-07-01"
+    },
+    {
+      "customer_id": 50,
+      "branch_id": 4,
+      "name": "Alfred Torphy",
+      "nik": "1a6ab182-0997-45",
+      "address": "43729 Emmerich Prairie",
+      "phone_number": "1-644-919-7479 x7227",
+      "registration_date": "2023-08-23"
+    }
+  ],
+  "loans": [
+    {
+      "loan_id": 41,
+      "customer_id": 41,
+      "branch_id": 4,
+      "amount_plafond": "33747899",
+      "interest_rate": 10.41,
+      "loan_date": "2025-03-07",
+      "term_months": 12,
+      "status": "completed"
+    },
+    {
+      "loan_id": 42,
+      "customer_id": 42,
+      "branch_id": 4,
+      "amount_plafond": "18737740",
+      "interest_rate": 5.08,
+      "loan_date": "2024-09-24",
+      "term_months": 24,
+      "status": "defaulted"
+    },
+    {
+      "loan_id": 43,
+      "customer_id": 43,
+      "branch_id": 4,
+      "amount_plafond": "30929181",
+      "interest_rate": 11.41,
+      "loan_date": "2024-05-16",
+      "term_months": 12,
+      "status": "active"
+    },
+    {
+      "loan_id": 44,
+      "customer_id": 44,
+      "branch_id": 4,
+      "amount_plafond": "15622574",
+      "interest_rate": 10.25,
+      "loan_date": "2024-07-26",
+      "term_months": 21,
+      "status": "defaulted"
+    },
+    {
+      "loan_id": 45,
+      "customer_id": 45,
+      "branch_id": 4,
+      "amount_plafond": "41446843",
+      "interest_rate": 8.39,
+      "loan_date": "2024-05-19",
+      "term_months": 6,
+      "status": "defaulted"
+    },
+    {
+      "loan_id": 46,
+      "customer_id": 46,
+      "branch_id": 4,
+      "amount_plafond": "32966864",
+      "interest_rate": 12.87,
+      "loan_date": "2025-05-09",
+      "term_months": 20,
+      "status": "active"
+    },
+    {
+      "loan_id": 47,
+      "customer_id": 47,
+      "branch_id": 4,
+      "amount_plafond": "48314872",
+      "interest_rate": 12.33,
+      "loan_date": "2024-11-18",
+      "term_months": 19,
+      "status": "completed"
+    },
+    {
+      "loan_id": 48,
+      "customer_id": 48,
+      "branch_id": 4,
+      "amount_plafond": "24241697",
+      "interest_rate": 9.02,
+      "loan_date": "2024-07-25",
+      "term_months": 9,
+      "status": "defaulted"
+    },
+    {
+      "loan_id": 49,
+      "customer_id": 49,
+      "branch_id": 4,
+      "amount_plafond": "20125793",
+      "interest_rate": 8.45,
+      "loan_date": "2024-08-26",
+      "term_months": 9,
+      "status": "defaulted"
+    },
+    {
+      "loan_id": 50,
+      "customer_id": 50,
+      "branch_id": 4,
+      "amount_plafond": "43516493",
+      "interest_rate": 12.99,
+      "loan_date": "2025-05-02",
+      "term_months": 18,
+      "status": "defaulted"
+    },
+    {
+      "loan_id": 51,
+      "customer_id": 41,
+      "branch_id": 4,
+      "amount_plafond": "27266420",
+      "interest_rate": 14.52,
+      "loan_date": "2024-06-20",
+      "term_months": 14,
+      "status": "defaulted"
+    },
+    {
+      "loan_id": 52,
+      "customer_id": 42,
+      "branch_id": 4,
+      "amount_plafond": "47495641",
+      "interest_rate": 5.64,
+      "loan_date": "2024-09-05",
+      "term_months": 18,
+      "status": "completed"
+    }
+  ],
+  "payments": [
+    {
+      "payment_id": 41,
+      "loan_id": 41,
+      "branch_id": 4,
+      "payment_date": "2025-04-30",
+      "amount_paid": "3099976",
+      "due_date": "2025-04-21",
+      "is_on_time": true
+    },
+    {
+      "payment_id": 42,
+      "loan_id": 42,
+      "branch_id": 4,
+      "payment_date": "2025-05-07",
+      "amount_paid": "3015120",
+      "due_date": "2025-04-08",
+      "is_on_time": true
+    },
+    {
+      "payment_id": 43,
+      "loan_id": 43,
+      "branch_id": 4,
+      "payment_date": "2025-04-14",
+      "amount_paid": "2792066",
+      "due_date": "2025-02-22",
+      "is_on_time": true
+    },
+    {
+      "payment_id": 44,
+      "loan_id": 44,
+      "branch_id": 4,
+      "payment_date": "2025-04-06",
+      "amount_paid": "4521386",
+      "due_date": "2025-05-10",
+      "is_on_time": true
+    },
+    {
+      "payment_id": 45,
+      "loan_id": 45,
+      "branch_id": 4,
+      "payment_date": "2025-03-21",
+      "amount_paid": "1549735",
+      "due_date": "2025-04-13",
+      "is_on_time": true
+    },
+    {
+      "payment_id": 46,
+      "loan_id": 46,
+      "branch_id": 4,
+      "payment_date": "2025-05-11",
+      "amount_paid": "2048496",
+      "due_date": "2025-03-15",
+      "is_on_time": true
+    },
+    {
+      "payment_id": 47,
+      "loan_id": 47,
+      "branch_id": 4,
+      "payment_date": "2025-04-11",
+      "amount_paid": "3445694",
+      "due_date": "2025-03-16",
+      "is_on_time": false
+    },
+    {
+      "payment_id": 48,
+      "loan_id": 48,
+      "branch_id": 4,
+      "payment_date": "2025-05-10",
+      "amount_paid": "3366580",
+      "due_date": "2025-04-06",
+      "is_on_time": true
+    },
+    {
+      "payment_id": 49,
+      "loan_id": 49,
+      "branch_id": 4,
+      "payment_date": "2025-04-04",
+      "amount_paid": "1271695",
+      "due_date": "2025-03-29",
+      "is_on_time": false
+    }
+  ],
+  "employees": [
+    {
+      "employee_id": 41,
+      "name": "Glen Davis I",
+      "position": "Future Functionality Strategist",
+      "assigned_customers": 4,
+      "hire_date": "2024-12-10",
+      "branch_id": 4
+    },
+    {
+      "employee_id": 42,
+      "name": "Jasmine Skiles",
+      "position": "Future Accounts Executive",
+      "assigned_customers": 1,
+      "hire_date": "2022-08-21",
+      "branch_id": 4
+    },
+    {
+      "employee_id": 43,
+      "name": "Benny Dicki",
+      "position": "Future Security Developer",
+      "assigned_customers": 2,
+      "hire_date": "2024-12-05",
+      "branch_id": 4
+    },
+    {
+      "employee_id": 44,
+      "name": "Alvin Reynolds III",
+      "position": "Senior Infrastructure Producer",
+      "assigned_customers": 5,
+      "hire_date": "2022-10-22",
+      "branch_id": 4
+    }
+  ],
+  "income": [
+    {
+      "income_id": 41,
+      "loan_id": 41,
+      "income_amount": "1019692",
+      "recorded_date": "2025-04-16"
+    },
+    {
+      "income_id": 42,
+      "loan_id": 42,
+      "income_amount": "1584357",
+      "recorded_date": "2025-04-17"
+    },
+    {
+      "income_id": 43,
+      "loan_id": 43,
+      "income_amount": "633626",
+      "recorded_date": "2025-04-27"
+    },
+    {
+      "income_id": 44,
+      "loan_id": 44,
+      "income_amount": "679193",
+      "recorded_date": "2025-05-10"
+    },
+    {
+      "income_id": 45,
+      "loan_id": 45,
+      "income_amount": "1627448",
+      "recorded_date": "2025-05-12"
+    },
+    {
+      "income_id": 46,
+      "loan_id": 46,
+      "income_amount": "1956595",
+      "recorded_date": "2025-04-24"
+    },
+    {
+      "income_id": 47,
+      "loan_id": 47,
+      "income_amount": "522775",
+      "recorded_date": "2025-04-22"
+    },
+    {
+      "income_id": 48,
+      "loan_id": 48,
+      "income_amount": "1670474",
+      "recorded_date": "2025-05-07"
+    },
+    {
+      "income_id": 49,
+      "loan_id": 49,
+      "income_amount": "1235219",
+      "recorded_date": "2025-05-04"
+    }
+  ]
+}

@@ -1,0 +1,390 @@
+{
+  "branch_id": 5,
+  "customers": [
+    {
+      "customer_id": 51,
+      "branch_id": 5,
+      "name": "Holly Frami",
+      "nik": "8a496c07-dad8-45",
+      "address": "680 Rahul Estates",
+      "phone_number": "250-258-9239 x943",
+      "registration_date": "2024-12-24"
+    },
+    {
+      "customer_id": 52,
+      "branch_id": 5,
+      "name": "Brenda Dooley",
+      "nik": "4b7f8b9d-9205-4c",
+      "address": "0766 Zboncak Burg",
+      "phone_number": "582.273.8608 x94988",
+      "registration_date": "2024-02-11"
+    },
+    {
+      "customer_id": 53,
+      "branch_id": 5,
+      "name": "Dr. Taylor Klocko",
+      "nik": "a725ea7a-4025-4c",
+      "address": "9576 Michael Key",
+      "phone_number": "833.881.0262 x4132",
+      "registration_date": "2025-02-15"
+    },
+    {
+      "customer_id": 54,
+      "branch_id": 5,
+      "name": "Emmett Hyatt",
+      "nik": "a6fc58f9-d8ad-44",
+      "address": "80532 Kerluke Coves",
+      "phone_number": "(977) 525-5024 x7870",
+      "registration_date": "2023-10-11"
+    },
+    {
+      "customer_id": 55,
+      "branch_id": 5,
+      "name": "Heather Parisian",
+      "nik": "d5759a78-8464-4f",
+      "address": "940 Hirthe Haven",
+      "phone_number": "993.650.0605 x8314",
+      "registration_date": "2023-12-24"
+    },
+    {
+      "customer_id": 56,
+      "branch_id": 5,
+      "name": "Kristopher Kuhic",
+      "nik": "313683f5-4b2a-4a",
+      "address": "43902 Reymundo Wells",
+      "phone_number": "1-883-539-7357",
+      "registration_date": "2023-10-04"
+    },
+    {
+      "customer_id": 57,
+      "branch_id": 5,
+      "name": "Malcolm Schoen",
+      "nik": "6c3f34c6-868c-4f",
+      "address": "76727 Marvin Fort",
+      "phone_number": "654-732-0111 x5435",
+      "registration_date": "2024-08-03"
+    },
+    {
+      "customer_id": 58,
+      "branch_id": 5,
+      "name": "Holly Berge Sr.",
+      "nik": "25abaf55-05da-46",
+      "address": "37415 Walsh Squares",
+      "phone_number": "929.601.7371",
+      "registration_date": "2024-07-19"
+    },
+    {
+      "customer_id": 59,
+      "branch_id": 5,
+      "name": "Lana Bergnaum",
+      "nik": "09102c7b-a110-4c",
+      "address": "483 Schroeder Forge",
+      "phone_number": "(229) 432-8148",
+      "registration_date": "2023-07-05"
+    },
+    {
+      "customer_id": 60,
+      "branch_id": 5,
+      "name": "Tonya Rippin",
+      "nik": "4f44d621-ce78-4d",
+      "address": "4089 Paucek Plaza",
+      "phone_number": "(533) 583-4618",
+      "registration_date": "2023-05-29"
+    }
+  ],
+  "loans": [
+    {
+      "loan_id": 51,
+      "customer_id": 51,
+      "branch_id": 5,
+      "amount_plafond": "47292449",
+      "interest_rate": 10.06,
+      "loan_date": "2024-07-19",
+      "term_months": 9,
+      "status": "active"
+    },
+    {
+      "loan_id": 52,
+      "customer_id": 52,
+      "branch_id": 5,
+      "amount_plafond": "41122280",
+      "interest_rate": 8.14,
+      "loan_date": "2025-04-12",
+      "term_months": 19,
+      "status": "completed"
+    },
+    {
+      "loan_id": 53,
+      "customer_id": 53,
+      "branch_id": 5,
+      "amount_plafond": "48065206",
+      "interest_rate": 7.98,
+      "loan_date": "2025-04-25",
+      "term_months": 16,
+      "status": "defaulted"
+    },
+    {
+      "loan_id": 54,
+      "customer_id": 54,
+      "branch_id": 5,
+      "amount_plafond": "40273832",
+      "interest_rate": 8.37,
+      "loan_date": "2024-10-24",
+      "term_months": 14,
+      "status": "active"
+    },
+    {
+      "loan_id": 55,
+      "customer_id": 55,
+      "branch_id": 5,
+      "amount_plafond": "25132304",
+      "interest_rate": 7.42,
+      "loan_date": "2024-07-02",
+      "term_months": 8,
+      "status": "defaulted"
+    },
+    {
+      "loan_id": 56,
+      "customer_id": 56,
+      "branch_id": 5,
+      "amount_plafond": "10784752",
+      "interest_rate": 12.05,
+      "loan_date": "2025-02-12",
+      "term_months": 13,
+      "status": "defaulted"
+    },
+    {
+      "loan_id": 57,
+      "customer_id": 57,
+      "branch_id": 5,
+      "amount_plafond": "24883187",
+      "interest_rate": 11.39,
+      "loan_date": "2024-08-10",
+      "term_months": 22,
+      "status": "completed"
+    },
+    {
+      "loan_id": 58,
+      "customer_id": 58,
+      "branch_id": 5,
+      "amount_plafond": "46021401",
+      "interest_rate": 11.66,
+      "loan_date": "2024-08-26",
+      "term_months": 16,
+      "status": "completed"
+    },
+    {
+      "loan_id": 59,
+      "customer_id": 59,
+      "branch_id": 5,
+      "amount_plafond": "38770958",
+      "interest_rate": 10.51,
+      "loan_date": "2025-03-19",
+      "term_months": 15,
+      "status": "completed"
+    },
+    {
+      "loan_id": 60,
+      "customer_id": 60,
+      "branch_id": 5,
+      "amount_plafond": "35574611",
+      "interest_rate": 6.25,
+      "loan_date": "2025-01-30",
+      "term_months": 6,
+      "status": "active"
+    },
+    {
+      "loan_id": 61,
+      "customer_id": 51,
+      "branch_id": 5,
+      "amount_plafond": "17957412",
+      "interest_rate": 7.29,
+      "loan_date": "2024-10-12",
+      "term_months": 8,
+      "status": "completed"
+    },
+    {
+      "loan_id": 62,
+      "customer_id": 52,
+      "branch_id": 5,
+      "amount_plafond": "14582318",
+      "interest_rate": 9.79,
+      "loan_date": "2024-09-20",
+      "term_months": 24,
+      "status": "defaulted"
+    }
+  ],
+  "payments": [
+    {
+      "payment_id": 51,
+      "loan_id": 51,
+      "branch_id": 5,
+      "payment_date": "2025-04-27",
+      "amount_paid": "2082397",
+      "due_date": "2025-04-04",
+      "is_on_time": false
+    },
+    {
+      "payment_id": 52,
+      "loan_id": 52,
+      "branch_id": 5,
+      "payment_date": "2025-05-07",
+      "amount_paid": "2074513",
+      "due_date": "2025-02-17",
+      "is_on_time": false
+    },
+    {
+      "payment_id": 53,
+      "loan_id": 53,
+      "branch_id": 5,
+      "payment_date": "2025-05-05",
+      "amount_paid": "2126141",
+      "due_date": "2025-04-17",
+      "is_on_time": true
+    },
+    {
+      "payment_id": 54,
+      "loan_id": 54,
+      "branch_id": 5,
+      "payment_date": "2025-03-28",
+      "amount_paid": "1333883",
+      "due_date": "2025-03-28",
+      "is_on_time": false
+    },
+    {
+      "payment_id": 55,
+      "loan_id": 55,
+      "branch_id": 5,
+      "payment_date": "2025-05-07",
+      "amount_paid": "1308419",
+      "due_date": "2025-04-19",
+      "is_on_time": true
+    },
+    {
+      "payment_id": 56,
+      "loan_id": 56,
+      "branch_id": 5,
+      "payment_date": "2025-03-22",
+      "amount_paid": "1182809",
+      "due_date": "2025-02-21",
+      "is_on_time": false
+    },
+    {
+      "payment_id": 57,
+      "loan_id": 57,
+      "branch_id": 5,
+      "payment_date": "2025-03-25",
+      "amount_paid": "1733937",
+      "due_date": "2025-03-17",
+      "is_on_time": false
+    },
+    {
+      "payment_id": 58,
+      "loan_id": 58,
+      "branch_id": 5,
+      "payment_date": "2025-04-11",
+      "amount_paid": "1704751",
+      "due_date": "2025-04-02",
+      "is_on_time": false
+    },
+    {
+      "payment_id": 59,
+      "loan_id": 59,
+      "branch_id": 5,
+      "payment_date": "2025-04-27",
+      "amount_paid": "2307055",
+      "due_date": "2025-05-03",
+      "is_on_time": false
+    }
+  ],
+  "employees": [
+    {
+      "employee_id": 51,
+      "name": "Candace Carter",
+      "position": "Product Communications Liaison",
+      "assigned_customers": 1,
+      "hire_date": "2022-07-31",
+      "branch_id": 5
+    },
+    {
+      "employee_id": 52,
+      "name": "Kristine Kassulke",
+      "position": "International Quality Analyst",
+      "assigned_customers": 4,
+      "hire_date": "2023-06-30",
+      "branch_id": 5
+    },
+    {
+      "employee_id": 53,
+      "name": "Kristie Glover",
+      "position": "Dynamic Branding Developer",
+      "assigned_customers": 1,
+      "hire_date": "2023-05-24",
+      "branch_id": 5
+    },
+    {
+      "employee_id": 54,
+      "name": "Shari Brown",
+      "position": "Global Research Facilitator",
+      "assigned_customers": 4,
+      "hire_date": "2024-08-10",
+      "branch_id": 5
+    }
+  ],
+  "income": [
+    {
+      "income_id": 51,
+      "loan_id": 51,
+      "income_amount": "509945",
+      "recorded_date": "2025-04-27"
+    },
+    {
+      "income_id": 52,
+      "loan_id": 52,
+      "income_amount": "733123",
+      "recorded_date": "2025-05-09"
+    },
+    {
+      "income_id": 53,
+      "loan_id": 53,
+      "income_amount": "1729196",
+      "recorded_date": "2025-05-01"
+    },
+    {
+      "income_id": 54,
+      "loan_id": 54,
+      "income_amount": "1179105",
+      "recorded_date": "2025-05-06"
+    },
+    {
+      "income_id": 55,
+      "loan_id": 55,
+      "income_amount": "1802602",
+      "recorded_date": "2025-05-04"
+    },
+    {
+      "income_id": 56,
+      "loan_id": 56,
+      "income_amount": "792597",
+      "recorded_date": "2025-05-03"
+    },
+    {
+      "income_id": 57,
+      "loan_id": 57,
+      "income_amount": "1463369",
+      "recorded_date": "2025-04-27"
+    },
+    {
+      "income_id": 58,
+      "loan_id": 58,
+      "income_amount": "1961514",
+      "recorded_date": "2025-05-10"
+    },
+    {
+      "income_id": 59,
+      "loan_id": 59,
+      "income_amount": "1282832",
+      "recorded_date": "2025-04-20"
+    }
+  ]
+}

@@ -1,0 +1,390 @@
+{
+  "branch_id": 2,
+  "customers": [
+    {
+      "customer_id": 21,
+      "branch_id": 2,
+      "name": "Rudolph Casper",
+      "nik": "a49f0506-633e-4d",
+      "address": "09626 O'Connell Hollow",
+      "phone_number": "577-282-1684",
+      "registration_date": "2023-05-21"
+    },
+    {
+      "customer_id": 22,
+      "branch_id": 2,
+      "name": "Mrs. Kendra Prohaska",
+      "nik": "ff9bab7f-9e2d-42",
+      "address": "8635 Aditya Street",
+      "phone_number": "(709) 477-5637 x0094",
+      "registration_date": "2023-12-04"
+    },
+    {
+      "customer_id": 23,
+      "branch_id": 2,
+      "name": "Mr. Micheal Buckridge",
+      "nik": "161e4368-fda0-4d",
+      "address": "5154 Powlowski Crescent",
+      "phone_number": "1-452-705-5262 x7041",
+      "registration_date": "2024-01-19"
+    },
+    {
+      "customer_id": 24,
+      "branch_id": 2,
+      "name": "Trevor Strosin",
+      "nik": "18d778b8-6784-4a",
+      "address": "4580 Zaria Meadows",
+      "phone_number": "979-850-9342",
+      "registration_date": "2024-09-01"
+    },
+    {
+      "customer_id": 25,
+      "branch_id": 2,
+      "name": "Shaun Hyatt MD",
+      "nik": "5ec9b59b-65fa-4a",
+      "address": "575 MacGyver Islands",
+      "phone_number": "640.797.5797 x8444",
+      "registration_date": "2025-01-27"
+    },
+    {
+      "customer_id": 26,
+      "branch_id": 2,
+      "name": "Tasha Fahey PhD",
+      "nik": "0333420e-647f-41",
+      "address": "61115 Kaitlin Meadow",
+      "phone_number": "(817) 960-6238",
+      "registration_date": "2024-03-26"
+    },
+    {
+      "customer_id": 27,
+      "branch_id": 2,
+      "name": "Willard Spinka",
+      "nik": "9757ce77-17ae-4f",
+      "address": "6983 Eli Stream",
+      "phone_number": "680.685.5209",
+      "registration_date": "2025-01-01"
+    },
+    {
+      "customer_id": 28,
+      "branch_id": 2,
+      "name": "Deanna Swift",
+      "nik": "b15d818e-b9f4-42",
+      "address": "6254 Asa Pass",
+      "phone_number": "884.846.0816 x7850",
+      "registration_date": "2024-03-04"
+    },
+    {
+      "customer_id": 29,
+      "branch_id": 2,
+      "name": "Miriam Cummerata",
+      "nik": "95004071-6a41-4d",
+      "address": "8879 Guido Hill",
+      "phone_number": "1-542-550-6257 x60237",
+      "registration_date": "2024-02-17"
+    },
+    {
+      "customer_id": 30,
+      "branch_id": 2,
+      "name": "Tony Stroman",
+      "nik": "5374c561-ba3f-47",
+      "address": "499 Prohaska Lake",
+      "phone_number": "823-457-9374 x1503",
+      "registration_date": "2024-06-15"
+    }
+  ],
+  "loans": [
+    {
+      "loan_id": 21,
+      "customer_id": 21,
+      "branch_id": 2,
+      "amount_plafond": "39972229",
+      "interest_rate": 7.76,
+      "loan_date": "2025-03-24",
+      "term_months": 19,
+      "status": "defaulted"
+    },
+    {
+      "loan_id": 22,
+      "customer_id": 22,
+      "branch_id": 2,
+      "amount_plafond": "40271583",
+      "interest_rate": 9.71,
+      "loan_date": "2024-06-25",
+      "term_months": 22,
+      "status": "active"
+    },
+    {
+      "loan_id": 23,
+      "customer_id": 23,
+      "branch_id": 2,
+      "amount_plafond": "20871529",
+      "interest_rate": 8.38,
+      "loan_date": "2025-04-16",
+      "term_months": 23,
+      "status": "active"
+    },
+    {
+      "loan_id": 24,
+      "customer_id": 24,
+      "branch_id": 2,
+      "amount_plafond": "38326562",
+      "interest_rate": 8.5,
+      "loan_date": "2025-02-18",
+      "term_months": 21,
+      "status": "active"
+    },
+    {
+      "loan_id": 25,
+      "customer_id": 25,
+      "branch_id": 2,
+      "amount_plafond": "35159077",
+      "interest_rate": 14.84,
+      "loan_date": "2025-02-13",
+      "term_months": 10,
+      "status": "completed"
+    },
+    {
+      "loan_id": 26,
+      "customer_id": 26,
+      "branch_id": 2,
+      "amount_plafond": "17514221",
+      "interest_rate": 5.99,
+      "loan_date": "2025-04-02",
+      "term_months": 21,
+      "status": "completed"
+    },
+    {
+      "loan_id": 27,
+      "customer_id": 27,
+      "branch_id": 2,
+      "amount_plafond": "27029147",
+      "interest_rate": 6.22,
+      "loan_date": "2025-02-08",
+      "term_months": 17,
+      "status": "defaulted"
+    },
+    {
+      "loan_id": 28,
+      "customer_id": 28,
+      "branch_id": 2,
+      "amount_plafond": "26264431",
+      "interest_rate": 14.53,
+      "loan_date": "2025-01-02",
+      "term_months": 6,
+      "status": "completed"
+    },
+    {
+      "loan_id": 29,
+      "customer_id": 29,
+      "branch_id": 2,
+      "amount_plafond": "13013827",
+      "interest_rate": 11.91,
+      "loan_date": "2025-05-04",
+      "term_months": 14,
+      "status": "completed"
+    },
+    {
+      "loan_id": 30,
+      "customer_id": 30,
+      "branch_id": 2,
+      "amount_plafond": "42669522",
+      "interest_rate": 5.21,
+      "loan_date": "2025-01-08",
+      "term_months": 19,
+      "status": "defaulted"
+    },
+    {
+      "loan_id": 31,
+      "customer_id": 21,
+      "branch_id": 2,
+      "amount_plafond": "35647675",
+      "interest_rate": 11.75,
+      "loan_date": "2025-02-14",
+      "term_months": 22,
+      "status": "active"
+    },
+    {
+      "loan_id": 32,
+      "customer_id": 22,
+      "branch_id": 2,
+      "amount_plafond": "13059811",
+      "interest_rate": 12.33,
+      "loan_date": "2025-04-07",
+      "term_months": 11,
+      "status": "completed"
+    }
+  ],
+  "payments": [
+    {
+      "payment_id": 21,
+      "loan_id": 21,
+      "branch_id": 2,
+      "payment_date": "2025-03-22",
+      "amount_paid": "3529866",
+      "due_date": "2025-04-26",
+      "is_on_time": false
+    },
+    {
+      "payment_id": 22,
+      "loan_id": 22,
+      "branch_id": 2,
+      "payment_date": "2025-05-15",
+      "amount_paid": "4499979",
+      "due_date": "2025-04-09",
+      "is_on_time": false
+    },
+    {
+      "payment_id": 23,
+      "loan_id": 23,
+      "branch_id": 2,
+      "payment_date": "2025-04-29",
+      "amount_paid": "1681355",
+      "due_date": "2025-03-11",
+      "is_on_time": true
+    },
+    {
+      "payment_id": 24,
+      "loan_id": 24,
+      "branch_id": 2,
+      "payment_date": "2025-04-27",
+      "amount_paid": "4307012",
+      "due_date": "2025-03-24",
+      "is_on_time": true
+    },
+    {
+      "payment_id": 25,
+      "loan_id": 25,
+      "branch_id": 2,
+      "payment_date": "2025-04-24",
+      "amount_paid": "3076032",
+      "due_date": "2025-04-24",
+      "is_on_time": true
+    },
+    {
+      "payment_id": 26,
+      "loan_id": 26,
+      "branch_id": 2,
+      "payment_date": "2025-03-29",
+      "amount_paid": "3294315",
+      "due_date": "2025-03-05",
+      "is_on_time": true
+    },
+    {
+      "payment_id": 27,
+      "loan_id": 27,
+      "branch_id": 2,
+      "payment_date": "2025-04-02",
+      "amount_paid": "1621391",
+      "due_date": "2025-03-30",
+      "is_on_time": false
+    },
+    {
+      "payment_id": 28,
+      "loan_id": 28,
+      "branch_id": 2,
+      "payment_date": "2025-04-15",
+      "amount_paid": "2541896",
+      "due_date": "2025-04-19",
+      "is_on_time": true
+    },
+    {
+      "payment_id": 29,
+      "loan_id": 29,
+      "branch_id": 2,
+      "payment_date": "2025-05-02",
+      "amount_paid": "4320720",
+      "due_date": "2025-05-08",
+      "is_on_time": false
+    }
+  ],
+  "employees": [
+    {
+      "employee_id": 21,
+      "name": "Elisa Roob",
+      "position": "Dynamic Mobility Planner",
+      "assigned_customers": 2,
+      "hire_date": "2022-10-05",
+      "branch_id": 2
+    },
+    {
+      "employee_id": 22,
+      "name": "Irma Hintz",
+      "position": "District Usability Orchestrator",
+      "assigned_customers": 3,
+      "hire_date": "2023-09-29",
+      "branch_id": 2
+    },
+    {
+      "employee_id": 23,
+      "name": "Rufus Tremblay",
+      "position": "Lead Implementation Designer",
+      "assigned_customers": 4,
+      "hire_date": "2023-09-04",
+      "branch_id": 2
+    },
+    {
+      "employee_id": 24,
+      "name": "Kimberly Gutmann",
+      "position": "Dynamic Branding Executive",
+      "assigned_customers": 3,
+      "hire_date": "2022-12-13",
+      "branch_id": 2
+    }
+  ],
+  "income": [
+    {
+      "income_id": 21,
+      "loan_id": 21,
+      "income_amount": "616655",
+      "recorded_date": "2025-04-18"
+    },
+    {
+      "income_id": 22,
+      "loan_id": 22,
+      "income_amount": "971836",
+      "recorded_date": "2025-05-12"
+    },
+    {
+      "income_id": 23,
+      "loan_id": 23,
+      "income_amount": "848495",
+      "recorded_date": "2025-04-17"
+    },
+    {
+      "income_id": 24,
+      "loan_id": 24,
+      "income_amount": "1973442",
+      "recorded_date": "2025-04-19"
+    },
+    {
+      "income_id": 25,
+      "loan_id": 25,
+      "income_amount": "1652713",
+      "recorded_date": "2025-05-11"
+    },
+    {
+      "income_id": 26,
+      "loan_id": 26,
+      "income_amount": "1659783",
+      "recorded_date": "2025-05-11"
+    },
+    {
+      "income_id": 27,
+      "loan_id": 27,
+      "income_amount": "742566",
+      "recorded_date": "2025-04-22"
+    },
+    {
+      "income_id": 28,
+      "loan_id": 28,
+      "income_amount": "1885468",
+      "recorded_date": "2025-04-19"
+    },
+    {
+      "income_id": 29,
+      "loan_id": 29,
+      "income_amount": "630336",
+      "recorded_date": "2025-05-04"
+    }
+  ]
+}
