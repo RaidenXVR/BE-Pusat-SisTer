@@ -18,6 +18,7 @@ const db = mysql.createPool({
 });
 
 // === 1. SYNC ENDPOINT ===
+// POST endpoint to Sync data from Unit Cabang to Cabang Pusat
 app.post('/sync/branch-data', async (req, res) => {
     const { branch_id, customers, loans, payments, employees, income } = req.body;
     try {
@@ -122,6 +123,43 @@ app.post('/sync/branch-data', async (req, res) => {
     }
 });
 
+// GET endpoint to fetch data of specific Unit Cabang
+app.get('/sync/branch-data/:branch_id', async (req, res) => {
+    const { branch_id } = req.params;
+
+    try {
+        const conn = await db.getConnection();
+
+        // Fetch customers
+        const [customers] = await conn.query('SELECT * FROM customers WHERE branch_id = ?', [branch_id]);
+
+        // Fetch loans
+        const [loans] = await conn.query('SELECT * FROM loans WHERE branch_id = ?', [branch_id]);
+
+        // Fetch payments
+        const [payments] = await conn.query('SELECT * FROM payments WHERE branch_id = ?', [branch_id]);
+
+        // Fetch employees
+        const [employees] = await conn.query('SELECT * FROM employees WHERE branch_id = ?', [branch_id]);
+
+        // Fetch income
+        const [income] = await conn.query('SELECT * FROM income WHERE loan_id IN (SELECT loan_id FROM loans WHERE branch_id = ?)', [branch_id]);
+
+        conn.release();
+
+        res.json({
+            branch_id,
+            customers,
+            loans,
+            payments,
+            employees,
+            income
+        });
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ success: false, message: 'Failed to fetch branch data' });
+    }
+});
 // === 2. DASHBOARD ENDPOINTS ===
 
 // Branches summary
@@ -160,40 +198,56 @@ app.get('/sync/logs', async (req, res) => {
 
 // GET /dashboard/income-over-time
 app.get('/dashboard/income-over-time', async (req, res) => {
-    const [rows] = await db.query(`
+    try {
+        const [rows] = await db.query(`
     SELECT DATE_FORMAT(recorded_date, '%Y-%m') as month, SUM(income_amount) as total_income
     FROM income
     GROUP BY month
     ORDER BY month
   `);
-    res.json(rows);
+        res.json(rows);
+    } catch (err) {
+        console.log(err);
+        res.status(500).json({ message: 'Failed to retrieve income over time.' })
+    }
 });
 
 // GET /dashboard/customers-over-time
 app.get('/dashboard/customers-over-time', async (req, res) => {
-    const [rows] = await db.query(`
+    try {
+        const [rows] = await db.query(`
     SELECT DATE_FORMAT(registration_date, '%Y-%m') as month, COUNT(*) as total_customers
     FROM customers
     GROUP BY month
     ORDER BY month
   `);
 
-    res.json(rows);
+        res.json(rows);
+    } catch (err) {
+        console.log(err);
+        res.status(500).json({ message: 'Failed to retrieve customer count by time' })
+    }
 });
 
 // GET /dashboard/on-time-payment-ratio
 app.get('/dashboard/on-time-payment-ratio', async (req, res) => {
-    const [[{ on_time = 0 } = {}]] = await db.query(`SELECT COUNT(*) as on_time FROM payments WHERE is_on_time = 1`);
-    const [[{ late = 0 } = {}]] = await db.query(`SELECT COUNT(*) as late FROM payments WHERE is_on_time = 0`);
-    res.json([
-        { name: 'On Time', value: on_time },
-        { name: 'Late', value: late }
-    ]);
+    try {
+        const [[{ on_time = 0 } = {}]] = await db.query(`SELECT COUNT(*) as on_time FROM payments WHERE is_on_time = 1`);
+        const [[{ late = 0 } = {}]] = await db.query(`SELECT COUNT(*) as late FROM payments WHERE is_on_time = 0`);
+        res.json([
+            { name: 'On Time', value: on_time },
+            { name: 'Late', value: late }
+        ]);
+    } catch (err) {
+        console.log(err);
+        res.status(500).json({ message: 'Failed to retrieve on time payment ratio' })
+    }
 });
 
 // GET /dashboard/income-over-time-cumulative
 app.get('/dashboard/income-over-time-cumulative', async (req, res) => {
-    const [rows] = await db.query(`
+    try {
+        const [rows] = await db.query(`
     SELECT
       t.month,
       SUM(t.total_income) OVER (ORDER BY t.month) AS cumulative_income
@@ -203,12 +257,17 @@ app.get('/dashboard/income-over-time-cumulative', async (req, res) => {
       GROUP BY month
     ) AS t
   `);
-    res.json(rows);
+        res.json(rows);
+    } catch (err) {
+        console.log(err);
+        res.status(500).json({ message: 'Failed to retrieve cumulative income over time' })
+    }
 });
 
 // GET /dashboard/customers-over-time-cumulative
 app.get('/dashboard/customers-over-time-cumulative', async (req, res) => {
-    const [rows] = await db.query(`
+    try {
+        const [rows] = await db.query(`
     SELECT
       t.month,
       SUM(t.total_customers) OVER (ORDER BY t.month) AS cumulative_customers
@@ -218,7 +277,11 @@ app.get('/dashboard/customers-over-time-cumulative', async (req, res) => {
       GROUP BY month
     ) AS t
   `);
-    res.json(rows);
+        res.json(rows);
+    } catch (err) {
+        console.log(err);
+        res.status(500).json({ message: 'Failed to retrieve cumulative customer count over time' })
+    }
 });
 
 
