@@ -1,25 +1,20 @@
 // Import dependencies
-const express = require('express');
-const bodyParser = require('body-parser');
-const cors = require('cors');
-const mysql = require('mysql2/promise');
+import express from 'express';
+import bodyParser from 'body-parser';
+import cors from 'cors';
+import { apiKeyAuth, executiveAuth } from './authentication.js';
+import { db } from './db.js';
 
 // Create app
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-// MySQL connection pool (adjust credentials as needed)
-const db = mysql.createPool({
-    host: 'localhost',
-    user: 'root',
-    password: 'thepassword',
-    database: 'cabang_pusat'
-});
 
-// === 1. SYNC ENDPOINT ===
+
+// === 1. SYNC ENDPOINTS ===
 // POST endpoint to Sync data from Unit Cabang to Cabang Pusat
-app.post('/sync/branch-data', async (req, res) => {
+app.post('/sync/branch-data', apiKeyAuth, async (req, res) => {
     const { branch_id, customers, loans, payments, employees, income } = req.body;
     try {
         const conn = await db.getConnection();
@@ -124,7 +119,7 @@ app.post('/sync/branch-data', async (req, res) => {
 });
 
 // GET endpoint to fetch data of specific Unit Cabang
-app.get('/sync/branch-data/:branch_id', async (req, res) => {
+app.get('/sync/branch-data/:branch_id', apiKeyAuth, async (req, res) => {
     const { branch_id } = req.params;
 
     try {
@@ -160,10 +155,13 @@ app.get('/sync/branch-data/:branch_id', async (req, res) => {
         res.status(500).json({ success: false, message: 'Failed to fetch branch data' });
     }
 });
+
+
+
 // === 2. DASHBOARD ENDPOINTS ===
 
 // Branches summary
-app.get('/dashboard/branches-summary', async (req, res) => {
+app.get('/dashboard/branches-summary', executiveAuth, async (req, res) => {
     try {
         const [rows] = await db.query(`
       SELECT ku.branch_id, ku.name AS branch_name,
@@ -197,7 +195,7 @@ app.get('/sync/logs', async (req, res) => {
 });
 
 // GET /dashboard/income-over-time
-app.get('/dashboard/income-over-time', async (req, res) => {
+app.get('/dashboard/income-over-time', executiveAuth, async (req, res) => {
     try {
         const [rows] = await db.query(`
     SELECT DATE_FORMAT(recorded_date, '%Y-%m') as month, SUM(income_amount) as total_income
@@ -213,7 +211,7 @@ app.get('/dashboard/income-over-time', async (req, res) => {
 });
 
 // GET /dashboard/customers-over-time
-app.get('/dashboard/customers-over-time', async (req, res) => {
+app.get('/dashboard/customers-over-time', executiveAuth, async (req, res) => {
     try {
         const [rows] = await db.query(`
     SELECT DATE_FORMAT(registration_date, '%Y-%m') as month, COUNT(*) as total_customers
@@ -230,7 +228,7 @@ app.get('/dashboard/customers-over-time', async (req, res) => {
 });
 
 // GET /dashboard/on-time-payment-ratio
-app.get('/dashboard/on-time-payment-ratio', async (req, res) => {
+app.get('/dashboard/on-time-payment-ratio', executiveAuth, async (req, res) => {
     try {
         const [[{ on_time = 0 } = {}]] = await db.query(`SELECT COUNT(*) as on_time FROM payments WHERE is_on_time = 1`);
         const [[{ late = 0 } = {}]] = await db.query(`SELECT COUNT(*) as late FROM payments WHERE is_on_time = 0`);
@@ -245,7 +243,7 @@ app.get('/dashboard/on-time-payment-ratio', async (req, res) => {
 });
 
 // GET /dashboard/income-over-time-cumulative
-app.get('/dashboard/income-over-time-cumulative', async (req, res) => {
+app.get('/dashboard/income-over-time-cumulative', executiveAuth, async (req, res) => {
     try {
         const [rows] = await db.query(`
     SELECT
@@ -265,7 +263,7 @@ app.get('/dashboard/income-over-time-cumulative', async (req, res) => {
 });
 
 // GET /dashboard/customers-over-time-cumulative
-app.get('/dashboard/customers-over-time-cumulative', async (req, res) => {
+app.get('/dashboard/customers-over-time-cumulative', executiveAuth, async (req, res) => {
     try {
         const [rows] = await db.query(`
     SELECT
@@ -285,9 +283,58 @@ app.get('/dashboard/customers-over-time-cumulative', async (req, res) => {
 });
 
 
+app.post('/secrets', executiveAuth, async (req, res) => {
 
-// Start server
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-    console.log(`Cabang Pusat API running on port ${PORT}`);
+    try {
+        const { user_id, newKey, branch_id } = req.body;
+        const conn = await db.getConnection();
+
+        await conn.beginTransaction();
+        if (branch_id == undefined) {
+            const [secrets] = await conn.query('SELECT secret_id FROM secrets WHERE user_id = ?', [user_id]);
+            if (secrets.length > 0) {
+                // Update existing secret
+                await conn.query(
+                    `UPDATE secrets SET hashed_secret = ? WHERE user_id = ?`,
+                    [newKey, user_id]
+                );
+                console.log("Updated secret for user_id", user_id);
+            } else {
+                // Insert new secret
+                await conn.query(
+                    `INSERT INTO secrets (user_id, hashed_secret) VALUES (?, ?)`,
+                    [user_id, newKey]
+                );
+                console.log("Inserted new secret for user_id", user_id);
+            }
+        } else {
+            const [secrets] = await conn.query('SELECT secret_id FROM secrets WHERE branch_id = ?', [branch_id]);
+            if (secrets.length > 0) {
+                // Update existing secret
+                await conn.query(
+                    `UPDATE secrets SET hashed_secret = ? WHERE branch_id = ?`,
+                    [newKey, branch_id]
+                );
+                console.log("Updated secret for branch_id", branch_id);
+            } else {
+                // Insert new secret
+                await conn.query(
+                    `INSERT INTO secrets (hashed_secret, branch_id) VALUES (?, ?)`,
+                    [newKey, branch_id]
+                );
+                console.log("Inserted new secret for branch_id", branch_id);
+            }
+        }
+        await conn.commit()
+        conn.release()
+        res.status(200).json({ "success": true, "message": "secret added successfully" })
+    } catch (err) {
+        console.log(err)
+        res.status(500).json({ success: false, message: 'Add secrets failed' });
+    }
 });
+
+app.get('/', (req, res) => {
+    return res.json({ code: 0, message: 'success', description: 'api endPoint Bank Cabang Pusat Sister', author: "Fitran Alfian Nizar aka. Raiden Xavier" });
+});
+export default app;
